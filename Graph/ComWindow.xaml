@@ -1,0 +1,24 @@
+﻿<Window x:Class="Graph.ComWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graph"
+        mc:Ignorable="d"
+        Title="ComWindow" Height="400" Width="600">
+    <Grid>
+        <ComboBox  Name="Cb" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" SelectedIndex="0"/>
+        <TextBlock Margin="0,13,135,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.524,0.501" HorizontalAlignment="Right" Width="82"><Run Text="№"/><Run Text=" "/><Run Text="COM-"/><Run Text="порта"/></TextBlock>
+        <Button Name="OpenCom" Content="Открыть COM-порт" Margin="0,37,10,0" VerticalAlignment="Top" Click="OpenCom_Click" HorizontalAlignment="Right" Width="120"/>
+        <TextBox  Name="TxbCom" HorizontalAlignment="Left" Margin="10,10,0,69" TextWrapping="Wrap" Width="160"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"         ScrollViewer.VerticalScrollBarVisibility="Auto"                  />
+        <Button Name="SendCom" Content="Отправить" HorizontalAlignment="Left" Margin="175,0,0,8" Width="82" Click="SendCom_Click" Height="25" VerticalAlignment="Bottom"/>
+        <TextBox Name="TxbSend" Margin="10,0,0,8" TextWrapping="Wrap" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="160"/>
+        <Button Name="OpenFile" Content="Открыть файл" Margin="0,0,10,10" HorizontalAlignment="Right" Width="120" Height="20" VerticalAlignment="Bottom" Click="OpenFile_Click"/>
+        <TextBlock Name="txbFile" Margin="0,0,10,57" TextWrapping="Wrap" HorizontalAlignment="Right" Width="120" Height="16" VerticalAlignment="Bottom"/>
+        <Button Name="SendFilebtn" Content="Отправить файл" Margin="0,0,135,10" HorizontalAlignment="Right" Width="120" Height="20" VerticalAlignment="Bottom" Click="SendFilebtn_Click"/>
+        <ProgressBar Name="Pgbcsv" Maximum="100" HorizontalAlignment="Left" Margin="10,0,0,38" Width="160" Height="26" VerticalAlignment="Bottom"/>
+        <TextBlock   Name="PgbText"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="" RenderTransformOrigin="0.531,0.625" Margin="75,0,0,43" Height="16" VerticalAlignment="Bottom"/>
+        <Button Name="StopBtn" Content="Стоп" HorizontalAlignment="Left" Margin="175,0,0,38" Width="82" Click="StopBtn_Click" Height="26" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
