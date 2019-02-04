@@ -73,6 +73,7 @@ namespace Graph
         string prelastitem;
         string file;
         int linemax=0;
+        int proverkcxadr;
         public MainWindow()
         {
            // Control.CheckForIllegalCrossThreadCalls = false;
